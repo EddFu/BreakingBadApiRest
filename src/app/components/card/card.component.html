@@ -1,0 +1,16 @@
+<div class="card" style="width: 35rem;">
+  <img src="{{ personaje.img }}" class="card-img-top" alt=" {{ personaje.name }} ">
+  <div class="card-body">
+    <h5 class="card-title"> {{personaje.name}} </h5>
+    <hr>
+    <p class="text-muted">{{personaje.nickname}} </p>
+    <hr>
+    <div class="row text-left">
+      <p class="text-muted">Occupation</p>
+      <div *ngFor="let occup of personaje.occupation">
+        <p class="occupation"> -  {{ occup }} </p>
+      </div>
+    </div>
+    <a href="#" class="btn btn-primary">Ver mas datos</a>
+  </div>
+</div>

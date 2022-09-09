@@ -1,0 +1,8 @@
+<h1 class="tituloHomePage">Breaking Bad API</h1>
+<hr>
+<input type="text" class="form-control" placeholder="Busca un personaje" (input)="filter($event)">
+<section class="containerHomePage">
+  <div *ngFor="let personaje of personajes" class="tarjeta">
+    <app-card [personaje] = "personaje"></app-card>
+  </div>
+</section>
